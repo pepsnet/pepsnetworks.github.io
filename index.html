@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Peps Networks</title>
+<meta name="description" content="Peps Networks delivers cloud and cybersecurity services for South African businesses. Zero-trust security, multi-cloud architecture, 99.9% uptime SLA.">
+<meta name="keywords" content="cloud solutions South Africa, cybersecurity, zero trust, SIEM, SOC, cloud security, Azure, AWS, managed security, Johannesburg">
+<meta name="author" content="Peps Networks (Pty) Ltd">
+<link rel="canonical" href="https://www.pepsnet.co.za/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23ffffff'/%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%230a1628' stroke-width='2'/%3E%3Cpath d='M50 10 A 40 40 0 0 1 78.28 78.28' stroke='%231aa9a4' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Cpath d='M78.28 78.28 A 40 40 0 0 1 50 90' stroke='%230a1628' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='12' r='3.5' fill='%231aa9a4'/%3E%3Ccircle cx='88' cy='50' r='3.5' fill='%231aa9a4'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23ffffff'/%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%230a1628' stroke-width='2'/%3E%3Cpath d='M50 10 A 40 40 0 0 1 78.28 78.28' stroke='%231aa9a4' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Cpath d='M78.28 78.28 A 40 40 0 0 1 50 90' stroke='%230a1628' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='12' r='3.5' fill='%231aa9a4'/%3E%3Ccircle cx='88' cy='50' r='3.5' fill='%231aa9a4'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Peps Networks | Cloud &amp; Cybersecurity Services South Africa">
+<meta property="og:description" content="Delivering cloud and cybersecurity services for South African businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Peps Networks">
+      <img src="logo.png" alt="Peps Networks logo" class="nav-logo-img" id="debugLogoImg">
+    </a>
+    <ul class="nav-links" role="menubar">
+      <li class="nav-item">
+        <a href="#services" class="nav-link">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="nav-drop">
+          <a href="#services">Managed SOC</a>
+          <a href="#services">Cloud Architecture</a>
+          <a href="#services">Zero Trust Security</a>
+          <a href="#services">SD-WAN &amp; Networking</a>
+          <a href="#services">Compliance &amp; Governance</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#about" class="nav-link">Who We Are <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="nav-drop">
+          <a href="#about">About Us</a>
+          <a href="#meeting-team">Meeting Team</a>
+          <a href="#careers">Careers</a>
+        </div>
+      </li>
+      <li><a href="#resources" class="nav-link">Resources</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions" style="align-items:center;gap:10px;">
+      <div style="display:flex;align-items:center;gap:6px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.08);padding:4px 8px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--muted);flex-shrink:0;"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+        <input id="topSearch" type="search" placeholder="Search" style="background:transparent;border:none;color:#fff;font-size:12px;outline:none;min-width:140px;" aria-label="Search">
+        <button type="button" onclick="doSearch()" aria-label="Search" style="background:var(--red);color:#fff;border:none;border-radius:999px;padding:6px 10px;font-size:11px;">Search</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mob-menu" id="mobMenu" aria-hidden="true">
+  <a href="#services" class="mob-link" onclick="closeNav()">Services</a>
+  <a href="#about" class="mob-link" onclick="closeNav()">Who We Are</a>
+  <a href="#resources" class="mob-link" onclick="closeNav()">Resources</a>
+  <a href="#contact" class="mob-link" onclick="closeNav()">Contact</a>
+  <div style="margin-top:32px"><a href="#contact" class="btn btn-red" style="width:100%;justify-content:center" onclick="closeNav()">Get Started →</a></div>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-inner">
+      <div class="hero-badge"><span></span><p>Connected. Reliable. Global.</p></div>
+      <h1>Delivering <span style="color:var(--red)">Cloud</span> &amp; <span style="color:var(--red)">Cybersecurity</span> Services.</h1>
+      <p class="hero-desc">Peps Networks helps South African enterprises stay secure, connected and resilient — with enterprise-grade cloud infrastructure, managed security and 24/7 expert support.</p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-red">Explore Services →</a>
+        <a href="#contact" class="btn btn-ghost">Talk to an Expert</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-num" id="s1">0+</div><div class="hero-stat-label">Enterprise Clients</div></div>
+        <div><div class="hero-stat-num" id="s2">0%</div><div class="hero-stat-label">Uptime SLA</div></div>
+        <div><div class="hero-stat-num" id="s3">0+</div><div class="hero-stat-label">Network Sites Managed</div></div>
+        <div><div class="hero-stat-num">24/7</div><div class="hero-stat-label">SOC Monitoring</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust" aria-label="Technology partners">
+  <div class="trust-track" aria-hidden="true">
+    <span class="trust-item"><span class="trust-dot"></span>Microsoft Azure Partner</span>
+    <span class="trust-item"><span class="trust-dot"></span>AWS Security Competency</span>
+    <span class="trust-item"><span class="trust-dot"></span>Fortinet Platinum Partner</span>
+    <span class="trust-item"><span class="trust-dot"></span>Cisco Certified Partner</span>
+    <span class="trust-item"><span class="trust-dot"></span>Palo Alto Networks</span>
+    <span class="trust-item"><span class="trust-dot"></span>ISO 27001 Certified</span>
+    <span class="trust-item"><span class="trust-dot"></span>POPIA Compliant</span>
+    <span class="trust-item"><span class="trust-dot"></span>Zero Trust Architecture</span>
+    <span class="trust-item"><span class="trust-dot"></span>24/7 SOC Monitoring</span>
+    <span class="trust-item"><span class="trust-dot"></span>SD-WAN Specialists</span>
+    <span class="trust-item"><span class="trust-dot"></span>Microsoft Azure Partner</span>
+    <span class="trust-item"><span class="trust-dot"></span>AWS Security Competency</span>
+    <span class="trust-item"><span class="trust-dot"></span>Fortinet Platinum Partner</span>
+    <span class="trust-item"><span class="trust-dot"></span>Cisco Certified Partner</span>
+    <span class="trust-item"><span class="trust-dot"></span>Palo Alto Networks</span>
+    <span class="trust-item"><span class="trust-dot"></span>ISO 27001 Certified</span>
+    <span class="trust-item"><span class="trust-dot"></span>POPIA Compliant</span>
+    <span class="trust-item"><span class="trust-dot"></span>Zero Trust Architecture</span>
+    <span class="trust-item"><span class="trust-dot"></span>24/7 SOC Monitoring</span>
+    <span class="trust-item"><span class="trust-dot"></span>SD-WAN Specialists</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section services-sec" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">What We Do</div>
+      <h2>Cloud &amp; Cybersecurity Services</h2>
+      <p>From zero-trust architecture to fully managed SOC operations — we deliver the complete stack your business needs to stay protected and agile.</p>
+    </div>
+    <div class="pill-nav">
+      <button class="pill active" onclick="filterSvc('all',this)">All Services</button>
+      <button class="pill" onclick="filterSvc('cloud',this)">Cloud</button>
+      <button class="pill" onclick="filterSvc('security',this)">Security</button>
+      <button class="pill" onclick="filterSvc('network',this)">Networks</button>
+      <button class="pill" onclick="filterSvc('compliance',this)">Compliance</button>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-row">
+        <article class="svc-card reveal" data-cat="security">
+          <div class="svc-icon">🛡️</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>Managed SOC</h3>
+          <p>24/7 Security Operations Centre — threat hunting, SIEM management and incident response.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+        <article class="svc-card reveal" data-cat="cloud">
+          <div class="svc-icon">☁️</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>Cloud Architecture</h3>
+          <p>Azure, AWS and hybrid multi-cloud design — right-sized for performance, cost and compliance.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+        <article class="svc-card reveal" data-cat="security">
+          <div class="svc-icon">🔒</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>Zero Trust Security</h3>
+          <p>Identity-centric frameworks that protect every user, device and workload across your environment.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+        <article class="svc-card reveal" data-cat="network">
+          <div class="svc-icon">🌐</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>SD-WAN &amp; Networking</h3>
+          <p>Software-defined WAN, MPLS, LAN/WAN design and managed network services across all your sites.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+      </div>
+      <div class="svc-row">
+        <article class="svc-card reveal" data-cat="security">
+          <div class="svc-icon">🔥</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>Next-Gen Firewall</h3>
+          <p>Fortinet and Palo Alto NGFW deployment — deep packet inspection, app control and intrusion prevention.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+        <article class="svc-card reveal" data-cat="network">
+          <div class="svc-icon">📡</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>ISP &amp; Connectivity</h3>
+          <p>Business fibre, LTE/5G failover and dedicated leased lines with guaranteed SLAs across South Africa.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+        <article class="svc-card reveal" data-cat="network">
+          <div class="svc-icon">🌐</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>Web Hosting</h3>
+          <p>Reliable web hosting solutions with high uptime, SSL certificates, and scalable resources for your business websites.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+        <article class="svc-card reveal" data-cat="network">
+          <div class="svc-icon">📧</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>Email Hosting &amp; Protection</h3>
+          <p>Secure email hosting with advanced spam filtering, antivirus protection, and compliance-ready archiving.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+        <article class="svc-card reveal" data-cat="cloud">
+          <div class="svc-icon">🗄️</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>Cloud Backup &amp; DR</h3>
+          <p>Automated cloud backups and tested disaster recovery — meet RTO/RPO targets and POPIA requirements.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+        <article class="svc-card reveal" data-cat="compliance">
+          <div class="svc-icon">📋</div>
+          <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <h3>Compliance &amp; Governance</h3>
+          <p>POPIA, ISO 27001, PCI-DSS and GDPR readiness — gap assessments, policy frameworks and audit support.</p>
+          <a href="#contact" class="btn-text" style="margin-top:16px">Learn more <span class="arr">→</span></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-banner">
+  <div class="stats-inner">
+    <div class="stat-item reveal"><div class="stat-num" id="b1">0+</div><div class="stat-label">Enterprise Clients Served</div></div>
+    <div class="stat-item reveal"><div class="stat-num" id="b2">0%</div><div class="stat-label">Uptime SLA Guaranteed</div></div>
+    <div class="stat-item reveal"><div class="stat-num" id="b3">0+</div><div class="stat-label">Threats Blocked Monthly</div></div>
+    <div class="stat-item reveal"><div class="stat-num" id="b4">0+</div><div class="stat-label">Years of Local Expertise</div></div>
+  </div>
+</div>
+
+<!-- WHY PEPS NETWORKS -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-visual reveal">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80&auto=format&fit=crop" alt="Peps Networks team at work" loading="lazy">
+        <div class="why-visual-badge"><p>Clients protected</p><strong>500+</strong></div>
+      </div>
+      <div class="reveal">
+        <div class="label">Who We Are</div>
+        <h2>Delivering Cloud &amp; Cybersecurity Services.</h2>
+        <p style="margin:16px 0 36px">Peps Networks has been delivering cloud and cybersecurity services to South African enterprises for over 15 years — so you can focus on your business while we keep it secure and always running.</p>
+        <div class="why-features">
+          <div class="why-feat"><div class="why-feat-icon">☁️</div><div><h4>Cloud Infrastructure</h4><p>Multi-cloud architects who design, deploy and optimise Azure, AWS and hybrid environments aligned to your goals.</p></div></div>
+          <div class="why-feat"><div class="why-feat-icon">🛡️</div><div><h4>Cybersecurity</h4><p>Security-first architecture backed by local expertise and globally certified engineers who know the SA threat landscape.</p></div></div>
+          <div class="why-feat"><div class="why-feat-icon">🌐</div><div><h4>Enterprise Networking</h4><p>Business fibre, SD-WAN, MPLS and 24/7 managed network services — keeping every site and user connected with guaranteed SLAs.</p></div></div>
+        </div>
+        <a href="#contact" class="btn btn-red" style="margin-top:36px">Talk to an Expert →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEETING TEAM -->
+<section class="section" id="meeting-team">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Meeting Team</div>
+      <h2>Team Roles</h2>
+      <p>Our skilled experts are available for client meetings, workshops, and consulting sessions to map your security and cloud strategy.</p>
+    </div>
+    <div class="team-grid reveal">
+      <article class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80" alt="Network Engineer" loading="lazy"></div>
+        <div class="team-body">
+          <h4>Network Engineer</h4>
+          <p>Athenkosi Pepengweni</p>
+        </div>
+      </article>
+      <article class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Cloud Architect" loading="lazy"></div>
+        <div class="team-body">
+          <h4>Cloud Architect</h4>
+          <p>Boitumelo Ntlatseng</p>
+        </div>
+      </article>
+      <article class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Security Architect" loading="lazy"></div>
+        <div class="team-body">
+          <h4>Security Architect</h4>
+          <p>Quinton Faas</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="section pillars-sec" id="pillars">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Core Offerings</div>
+      <h2>Cloud &amp; Cybersecurity Services.</h2>
+      <p>Complete cloud and cybersecurity services — fully integrated, locally supported, built for enterprises that can't afford downtime or breaches.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar reveal"><div class="pillar-num">01</div><div class="pillar-icon">☁️</div><h3>Cloud Services</h3><p>Multi-cloud architecture, migration, hosting and optimisation across Azure and AWS — with local data residency for POPIA compliance.</p><div class="pillar-tags"><span class="tag">Azure</span><span class="tag">AWS</span><span class="tag">Hybrid Cloud</span><span class="tag">Backup &amp; DR</span></div></div>
+      <div class="pillar reveal"><div class="pillar-num">02</div><div class="pillar-icon">🔐</div><h3>Cybersecurity</h3><p>Managed SOC, SIEM, Zero Trust, endpoint protection and security audits — comprehensive defence against evolving threats.</p><div class="pillar-tags"><span class="tag">Managed SOC</span><span class="tag">Zero Trust</span><span class="tag">SIEM</span><span class="tag">EDR/XDR</span></div></div>
+      <div class="pillar reveal"><div class="pillar-num">03</div><div class="pillar-icon">🏗️</div><h3>Network Infrastructure</h3><p>LAN, WAN, SD-WAN and data centre build-outs — enterprise-grade design, deployment and 24/7 management.</p><div class="pillar-tags"><span class="tag">SD-WAN</span><span class="tag">MPLS</span><span class="tag">Business Fibre</span><span class="tag">LTE/5G</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section" id="partners">
+  <div class="container">
+    <div class="section-head reveal" style="text-align:center"><div class="label" style="justify-content:center">Technology Partners</div><h2>Backed by the World's Leading Vendors</h2></div>
+    <div class="partners-grid reveal">
+      <div class="partner-item"><div class="partner-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="Microsoft Azure Partner"></div></div>
+      <div class="partner-item"><div class="partner-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" alt="AWS Security Competency"></div></div>
+      <div class="partner-item"><div class="partner-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/fortinet.svg" alt="Fortinet Platinum Partner"></div></div>
+      <div class="partner-item"><div class="partner-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/paloaltonetworks.svg" alt="Palo Alto Networks"></div></div>
+      <div class="partner-item"><div class="partner-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cisco.svg" alt="Cisco Certified Partner"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="section resources-sec" id="resources">
+  <div class="container">
+    <div class="section-head reveal" style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px">
+      <div><div class="label">Insights</div><h2>Resources &amp; Insights</h2></div>
+      <a href="#resources" class="btn-text">View all resources <span class="arr">→</span></a>
+    </div>
+    <div class="res-grid">
+      <article class="res-card reveal"><div class="res-type">Blog</div><h3>Why Zero Trust is Now Essential for South African Enterprises</h3><p>Ransomware attacks are surging across Africa. We explore how Zero Trust architecture reduces your blast radius — and your risk.</p><a href="#" class="res-link">Read more →</a></article>
+      <article class="res-card reveal"><div class="res-type">Case Study</div><h3>How We Cut a Gauteng Retailer's Cloud Costs by 40% on AWS</h3><p>A 500-seat retail group needed to right-size their AWS environment without sacrificing performance. Here's how we did it.</p><a href="#" class="res-link">Read case study →</a></article>
+      <article class="res-card reveal"><div class="res-type">Webinar</div><h3>POPIA Compliance in 2026: What Every SA Business Must Know</h3><p>Join our compliance experts as they break down the latest POPIA enforcement landscape and what you need to do today.</p><a href="#" class="res-link">Watch webinar →</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- CAREERS -->
+<section class="section" id="careers">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="label">Careers</div>
+      <h2>Current Openings</h2>
+      <p>We’re hiring for key roles in cloud, cybersecurity and network operations. Choose the position that matches your expertise.</p>
+    </div>
+    <a href="#contact" class="btn btn-red" style="margin-top:8px">Apply Now →</a>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div style="position:relative;z-index:1">
+    <div class="label" style="justify-content:center">Get Started</div>
+    <h2>Ready to Secure Your Business?</h2>
+    <p>Talk to a Peps Networks expert today. We'll assess your current environment and show you exactly where you stand — no obligation.</p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn btn-red">Request a Free Assessment →</a>
+      <a href="tel:+27110000000" class="btn btn-ghost">📞 +27 11 000 0000</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="label">Contact Us</div>
+        <h2>Let's Talk</h2>
+        <p style="margin:16px 0 0">Whether you need a full security assessment or just have a question — our team is ready to help.</p>
+        <div class="contact-info-items">
+          <div class="ci"><div class="ci-icon">📍</div><div><h4>Head Office</h4><p>President Avenue, Oranjesig, Bloemfontein 9301</p></div></div>
+          <div class="ci"><div class="ci-icon">📞</div><div><h4>Call Us</h4><a href="tel:+27110000000">+27 11 000 0000</a></div></div>
+          <div class="ci"><div class="ci-icon">📧</div><div><h4>Email</h4><a href="mailto:info@pepsnet.co.za">info@pepsnet.co.za</a></div></div>
+          <div class="ci"><div class="ci-icon">🕐</div><div><h4>SOC &amp; Support</h4><p>24/7 — 365 days a year</p></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <form onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input class="form-input" name="fname" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name</label><input class="form-input" name="lname" placeholder="Smith" required></div>
+          </div>
+          <div class="form-group"><label>Email Address</label><input class="form-input" type="email" name="email" placeholder="john@company.co.za" required></div>
+          <div class="form-group"><label>Company</label><input class="form-input" name="company" placeholder="Your Company (Pty) Ltd"></div>
+          <div class="form-group"><label>Service Interest</label>
+            <select class="form-select" name="service">
+              <option value="">Select a service…</option>
+              <option>Cloud Architecture</option>
+              <option>Managed SOC</option>
+              <option>Zero Trust Security</option>
+              <option>SD-WAN &amp; Networking</option>
+              <option>Compliance &amp; Governance</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea class="form-textarea" name="msg" placeholder="Tell us about your environment or challenge…" required></textarea></div>
+          <div class="check-row">
+            <input type="checkbox" id="priv" name="privacy" required>
+            <label for="priv">I agree to the <a href="#" style="color:var(--red2)">Privacy Policy</a> and consent to being contacted by Peps Networks. POPIA compliant.</label>
+          </div>
+          <button type="submit" class="btn btn-red" style="width:100%;justify-content:center">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo" style="margin-bottom:4px;display:inline-flex;align-items:center;" aria-label="Peps Networks">
+        <img src="logo.png" alt="Peps Networks logo" class="nav-logo-img" style="height:80px;width:auto;">
+      </a>
+      <p>Delivering cloud and cybersecurity services for South African businesses. Resilient. Secure. Future-ready.</p>
+      <div class="social-row">
+        <a href="#" class="soc-btn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" class="soc-btn" aria-label="Twitter"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="#" class="soc-btn" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h5>Services</h5>
+      <ul class="footer-links">
+        <li><a href="#services">Managed SOC</a></li>
+        <li><a href="#services">Cloud Architecture</a></li>
+        <li><a href="#services">Zero Trust Security</a></li>
+        <li><a href="#services">SD-WAN &amp; Networking</a></li>
+        <li><a href="#services">ISP &amp; Connectivity</a></li>
+        <li><a href="#services">Compliance &amp; Governance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Branches</h5>
+      <ul class="footer-links">
+        <li><a href="#branches">Johannesburg</a></li>
+        <li><a href="#branches">Cape Town</a></li>
+        <li><a href="#branches">Gqeberha</a></li>
+        <li><a href="#branches">Durban</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Stay Connected</h5>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.7">Subscribe for cloud security insights and threat intelligence.</p>
+      <div style="display:flex;gap:8px">
+        <input id="nlEmail" type="email" class="form-input" placeholder="Your email" style="flex:1;min-height:44px;font-size:13px" aria-label="Newsletter email">
+        <button onclick="subscribeNL()" class="btn btn-red" style="padding:10px 16px;font-size:13px;white-space:nowrap">Subscribe</button>
+      </div>
+      <p style="font-size:11px;color:var(--dim);margin-top:10px">🔒 POPIA compliant. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Peps Networks (Pty) Ltd · President Avenue, Oranjestig, Bloemfontein 9301</p>
+    <ul class="legal">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">POPIA Compliance</a></li>
+      <li><a href="#">Cookie Policy</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="alert" aria-live="polite"><span id="toastIcon">✅</span><span id="toastMsg">Done!</span></div>
+<button class="back-top" id="backTop" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
